@@ -1,0 +1,55 @@
+Initialisation du dépôt :
+
+mkdir MRS91
+cd softp
+git clone https://github.com/LeGoat91/MRS91
+git user
+git user.name "Iciro913"
+
+Initialisation du dossier style ainsi que son fichier style :
+
+mkdir style
+nano style.css
+git add style.css
+git commit -m "Ajout du CSS vide SOFIANE"
+git push origin main
+
+git pull origin main
+
+Création de la branche css et ajout du code 
+
+git checkout -b branchecss
+cd style
+nano style.css (On rajoute la V1 du CSS)
+git add style/style.css
+git commit -m "Ajout de la v1 css SOFIANE"
+git push origin brachess
+
+On réunis la branchecss et la main puis on push
+
+git checkout main
+git merge branchecss
+git add .
+git commit -m "Ajout de la V1 CSS sur la main"
+git push origin main
+
+On recupérer la branche html de Marwan et on la modifie en V2
+
+git checkout "branche/html"
+git push origin main
+nano index.html
+cd html
+nano page1.html
+cd ..
+git add .
+git commit -m "Ajout de la V2 du html SOFIANE"
+git push origin "branche/html"
+
+On réunis la branche/html et la main puis on push
+
+git merge branche/html
+git add .
+git commit -m "Ajout de la V2 html sur la main SOFIANE"
+git push origin main
+
+
