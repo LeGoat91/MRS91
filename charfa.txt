@@ -1,0 +1,82 @@
+TP GitHub :
+LeGoat91 : Marwane CHARFA
+Ichiro913 : Sofiane 
+maimaidu913 : Richard
+lien GitHub: https://github.com/LeGoat91/MRS91
+
+Création du dossier MRS dans Document avec les commandes :
+	- mkdir Documents/MRS
+	- cd MRS (pour pouvoir travailler sur ce dossier)
+
+Clonage du Git :
+	- git clone https://github.com/LeGoat91/MRS91.git
+Création du dossier html :
+	- mkdir html
+	- création d'un fichier test.txt afin de vérifier le bon fonctionnement
+Une fois que c'est bon :
+	- création fichier page1.html dans html
+	- création index.html dans main
+Après avoir push et avoir mis à jour les données de mes collègues après leurs push avec un :
+	- git pull origin main
+J'ai ensuite crée une branche pour pouvoir modifier dans mon coté :
+	- git checkout -b branche/html
+Une fois avoir  fini de bien crée mes pages dans la branche, on merge la branche sur le main
+	- Déplacement sur le main "git checkout main"
+	- Je fais un "git pull origin main" pour éviter les problèmes
+	- Ensuite un "git merge branche/html" afin de fusionner sur la branche main
+	- Un git add , puis un  git commit -m "Mise à jour de la V1 html sur le main" 
+	- Pour finir un git push origin main afin de mettre à jour le main sur le GitHub
+Recap commande : 
+Création d'une branche :
+
+			git checkout -b branche/html
+Mise à jour et fusion :
+			git checkout main
+			git pull origin main
+			git merge branche/html
+			git add .
+			git commit -m "Mise à jour de la V1 html sur le main"
+			git push origin main
+
+Changement V2 du css de Sofiane :
+	- Déplacement sur la branche "git checkout branchecss"
+	- un pull depuis la branche afin de pas avoir de conflit "git pull origin main"
+	- Un petit git pull origin main afin de mettre à jour et éviter tout conflit
+	- ensuite je modifie le fichier "nano style/style.css"
+	- Mettre à jour les modification avec un "git add ."
+	- Utilisation de la cmd :  git commit -m "Mettre à jour le main après modification V2 du css depuis la branchecss grace à la fusion"
+	-Et ensuite un push pour mettre à a jour le dépôt git
+Recap commande :
+	Déplacement sur la branche :
+				git checkout branchecss
+				git pull origin main
+Modification et mise à jour :
+
+				nano style/style.css
+				git add .
+				git commit -m "Version 2 du css par marwane de la version 1 de sofiane" sur le git je me suis tromper j'ai mis Richard au 				lieu de sofiane
+				git push origin branchecss
+Fusion sur main :
+
+				git checkout main
+				git pull origin main
+				git merge branchecss
+				git add . 
+				git commit - m "Mettre à jour le main après modification V2 du css depuis la branchecss grace à la fusion"
+				git push origin main
+
+Modification V3 des fichies html :
+			-Basculement branche branchecss, modification et 			application des modification
+Recap commande :
+		git add .
+		git commit -m "Rectification des problèmes de Link dans les 		pages html dont page1 et index"
+		git push origin branchecss
+Appliqué sur main :
+		git pull origin main
+		git merge branchecss
+		git add .
+		git commit -m "MAJ main problèmes Link par marwane"
+		git push origin main
+
+Rectification des fichiers html pour problème de lien
+						
